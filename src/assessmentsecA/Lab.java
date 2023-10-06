@@ -85,15 +85,27 @@ public class Lab {
         Employee labAttendant = new Employee("11", "hamza");
     }
     public Employee getLabAttendantDetails(){return labAttendant;}
-    public void displayLD(){
+   /* public void displayLD(){
         System.out.println(" labID: "+ labID);
         System.out.println("status: "+status);
         labAttendant.displayED();
+        System.out.println("Computer Details:");
         for (Computer comp: computers){
             if (comp != null){
                 comp.displayCD();
             }
         }
-
-    }
+    }*/
+   public void displayLD() {
+       System.out.println("Lab ID: " + labID);
+       System.out.println("Lab Status: " + status);
+       System.out.println("Lab Attendant: Ali");
+       labAttendant.displayED();
+       System.out.println("Computers in the Lab:");
+       for (Computer computer : computers) {
+           if (computer != null) {
+               computer.displayCD();
+           }
+       }
+   }
 }
