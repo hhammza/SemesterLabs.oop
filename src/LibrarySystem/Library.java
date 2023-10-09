@@ -33,7 +33,7 @@ public class Library {
     public void displayAvailableItems(){
         for(LibraryItem i : libraryItems){
             if(i != null){
-                if(i.isBorrowed() == false){
+                if(i.getIsBorrowed() == false){
                     System.out.println(i);
                     System.out.println("\n");
                 }
@@ -44,7 +44,7 @@ public class Library {
     public void displayBorrowedItems(){
         for(LibraryItem i : libraryItems){
             if(i != null){
-                if(i.isBorrowed() == true){
+                if(i.getIsBorrowed() == true){
                     System.out.println(i);
                     System.out.println("\n");
                 }

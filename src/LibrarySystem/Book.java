@@ -4,7 +4,7 @@ public class Book extends LibraryItem{
     private int pageCount;
 
     public Book(String title, String author, int year,int pageCount) {
-        super();
+        super(title, author, year,LibraryItemType.BOOK);
         this.pageCount = pageCount;
     }
 

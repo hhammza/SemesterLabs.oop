@@ -7,11 +7,11 @@ public class LibraryItem {
     private boolean isBorrowed;
     private LibraryItemType itemType;
 
-    public LibraryItem(String title, String author, int year, boolean isBorrowed, LibraryItemType itemType) {
+    public LibraryItem(String title, String author, int year, LibraryItemType itemType) {
         this.title = title;
         this.author = author;
         this.year = year;
-        this.isBorrowed = isBorrowed;
+        this.isBorrowed = false;
         this.itemType = itemType;
     }
 
@@ -43,7 +43,7 @@ public class LibraryItem {
         this.year = year;
     }
 
-    public boolean isBorrowed() {
+    public boolean getIsBorrowed() {
         return isBorrowed;
     }
 
@@ -55,20 +55,19 @@ public class LibraryItem {
         return itemType;
     }
 
+    public void setItemType(LibraryItemType itemType) {
+        this.itemType = itemType;
+    }
     @Override
     public String toString() {
         return "Title: " + title + "\n author:'" + author + '\n' + " year:" + year + "\n isBorrowed:" + isBorrowed + "\n itemType:" + itemType;
     }
 
-    public void setItemType(LibraryItemType itemType) {
-        this.itemType = itemType;
-    }
-
-    public boolean equals(LibraryItem item){
+    /*public boolean equals(LibraryItem item){
         if(item.getTitle() == this.getTitle()){
             return true;
         }
         return false;
-    }
+    }*/
 
 }
