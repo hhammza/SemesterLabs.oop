@@ -1,0 +1,2 @@
+*************Stream:
+    Scanner, System.in, are streams. Java performs input/output through these streams. This is an abstraction that java provides.

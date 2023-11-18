@@ -1,0 +1,18 @@
+*****************Generics******************
+    List<String> s = new ArrayList<>(); //only string can be added. Type is restricted. Used for type safety.
+    List s1 = new ArrayList(); //can add any object. if you don't use type safety there are more chances of runtime error.
+
+        //not type safe
+        Box box = new Box("Water");
+        Box box1 = new Box(3);
+        Box[] b = new Box[10];//not type safe.
+        System.out.println(b.length);
+        b[0] = new Box("hhh");
+        b[1] = new Box(111);
+        System.out.println(b[0].getContainer());
+        System.out.println(b[1].getContainer());
+
+        //cannot add dog in the list of cats bcz type is bound.
+        ArrayList<Cat> c = new ArrayList<>();
+        c.add(new Cat());
+        c.add(new Dog());

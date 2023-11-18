@@ -1,0 +1,7 @@
+Stack Trace:
+    This information is known as a stack trace, which
+    includes the name of the exception (java.lang.ArithmeticException) in a descriptive
+    message that indicates the problem that occurred and the method-call stack.
+    The stack trace includes the path of execution that led to
+    the exception method by method. This helps you debug the program.
+Multi-Catch:

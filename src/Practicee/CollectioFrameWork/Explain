@@ -1,0 +1,60 @@
+***Collection:
+    any group of individual objects which are represented by a single unit is called collection of the objects.
+***Framework:(library)
+    It is a set of classes and interfaces which provide a ready-made architecture. e.g, collection framework.
+***Collection Framework:
+    Java API which provides architecture to store and manipulate group of objects.
+
+***Collection Hierarchy***:
+
+***Type Safe:
+    same type of elements can be added to collection.
+***Un Type Safe:
+    different types of elements can be added to collection.
+
+***auto-boxing:  automatic process.
+    primitive type to wrapper class. e.g, Integer aObj = 56;  , int to Integer.
+***Un-boxing:   automatic process.
+    wrapper class to primitive class. e.g, int a = aObj;  ,Integer to int.
+
+***hashset:
+   stores values in unordered manner. duplicates are not allowed.
+   does not have methods which include index.
+
+ArrayList:
+    duplicates are allowed.
+LinkedList:
+    duplicates sre allowed.
+
+TreeSet:
+    sorts elements in ascending order. cannot have duplicates.
+*Map:
+    duplicate keys are not allowed. duplicate values are allowed.Order is not maintained here.
+
+***Traverse***:
+*for each loop: enhanced for loop.
+*Iterator: itr.hasNext(), itr.next()
+ //traversing using Iterator: forward traversing.
+        Iterator<String> itr = name.iterator();
+        while(itr.hasNext())
+        {
+            System.out.println(itr.next());
+        }
+*ListIterator: itr.hasPrevious(), itr.Previous()
+ ListIterator<String> litr = name.listIterator(name.size());
+        while(litr.hasPrevious())
+        {
+            String previous = litr.previous();
+            System.out.println(previous);
+        }
+*Enumeration: en.hasMoreElements(), en.nextElement()
+    is used for vector only.
+ Enumeration<String> en = vector.elements();
+           while(en.hasMoreElements()){
+               System.out.println(en.nextElement());
+           }
+ *for each method:
+    used for implementation of method which is present in functional interface.
+
+
+
